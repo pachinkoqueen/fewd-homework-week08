@@ -30,29 +30,35 @@ function shuffle(array) {
   return array;
 }
 
+
+//function for drawing cards
+
+function drawCards() {
+  console.log('Create cards')
+// create new div with class card
+//give it the innerText of the card
+  var $cardContainer = $('<div>');
+  .addClass('card').text(DUNNO)
+
+//append it to the div of class board
+  $cardContainer.appendTo(".board")
+
+}
+
 //event listener when user clicks then see if cards match
 $(DUNNO).click(drawCard)
 
 
-//display alert when cards match
-$(DUNNO).click(function() {
-  alert("You are a winner!");
-})
-
-
-// create new div with class card
-
-function drawCard() {
-  var $draw = $('<div>');
-  $draw.attr('class','card') 
-  $draw.html('INNERTEXTOFCARDS')
-  $draw.appendTo(DIVOFCLASSCARD)
+// if cards match then display alert or else draw again
+function cardMatch() {
+  $(DUNNO).click(function() {
+  if ((DUNNO).is(SOMEMATCH))
+    alert("You are a winner!");
+  else
+});
 }
 
 
-
-
-//
 
 /*
 
