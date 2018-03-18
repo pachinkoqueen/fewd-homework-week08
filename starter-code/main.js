@@ -31,10 +31,22 @@ function shuffle(array) {
 }
 
 
+//not sure what i am doing here
+$(function() {
+  //something here
+  event.preventDefault();
+
+  var firstCard = event.target.
+})
+
+
+
+
 //function for drawing cards
 
 function drawCards() {
   console.log('Create cards')
+
 // create new div with class card
 //give it the innerText of the card
   var $cardContainer = $('<div>');
@@ -46,10 +58,12 @@ function drawCards() {
 }
 
 //event listener when user clicks then see if cards match
+
 $(DUNNO).click(drawCard)
 
 
 // if cards match then display alert or else draw again
+
 function cardMatch() {
   $(DUNNO).click(function() {
   if ((DUNNO).is(SOMEMATCH))
